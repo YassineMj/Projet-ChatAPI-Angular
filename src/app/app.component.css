@@ -1,0 +1,58 @@
+/* app.component.css */
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Utilise toute la hauteur de l'écran */
+}
+
+.chat-history {
+  flex: 1; /* La zone de l'historique prend tout l'espace restant */
+  overflow-y: auto; /* Ajoute un défilement vertical si nécessaire */
+  padding: 10px;
+}
+
+.user-message {
+  background-color: #DCF8C6;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  max-width: 70%; /* Limite la largeur pour éviter les messages trop larges */
+  align-self: flex-end; /* Aligne les messages de l'utilisateur à droite */
+}
+
+.system-message {
+  background-color: #EAEAEA;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  max-width: 70%; /* Limite la largeur pour éviter les messages trop larges */
+  align-self: flex-start; /* Aligne les messages système à gauche */
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.chat-input button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #0056b3; /* Couleur de survol légèrement plus foncée */
+}
