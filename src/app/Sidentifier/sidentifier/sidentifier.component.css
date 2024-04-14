@@ -1,0 +1,176 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+
+.wrapper {
+    background-image: linear-gradient(to right,#f28d6cab, #f8d757ba );
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 105vh;
+}
+
+.side-image {
+    background-image: url("../../../assets/images/sidentifier-bot-chat.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0 10px;
+    position: relative;
+}
+
+.row {
+    width: 900px;
+    height: 550px;
+    border-radius: 20px;
+    background: #fff;
+    padding: 0px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 13%;
+    margin-bottom: 10%;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text p {
+    color: #fff;
+    font-size: 20px;
+}
+
+i {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-left: 6px solid rgba(237, 199, 171, 0.756);
+    border-radius: 30px;
+  
+}
+
+.input-box {
+    width: 330px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.input-box header {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 54px;
+    font-size: 25px;
+
+    
+}
+a{
+    cursor: pointer;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+
+.input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+#password1{
+    margin-bottom: 20px;
+}
+.input-box .input-field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-field input:focus~label {
+    top: -10px;
+    font-size: 13px;
+}
+
+.input-field input:valid~label {
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+
+
+
+.submit {
+    border: none;
+    outline: none;
+    height: 45px;
+    background: rgba(255, 204, 201, 0.548);
+    border: 2px solid rgba(251, 144, 123, 0.838);
+    border-radius: 50px;
+    transition: 0.4s;
+    color: rgb(0, 0, 0);
+}
+
+.submit:hover {
+    background: rgba(251, 144, 123, 0.838);
+    color: #fff9f9;
+}
+
+
+span a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fa7a57fb;
+    transition: 0.5s;
+}
+
+span a:hover {
+    text-decoration: underline;
+    color: #1f2222;
+}
+
+@media only screen and (max-width: 768px) {
+    .side-image {
+        border-radius: 200px 200px;
+    }
+
+    img {
+        width: 55px;
+        position: absolute;
+        top: 20px;
+        left: 47%;
+    }
+   .right{
+    border-left: none;
+   }
+    .row {
+        max-width: 420px;
+        width: 100%;
+        border-radius: 44% 10% 23% 1%;
+    }
+}

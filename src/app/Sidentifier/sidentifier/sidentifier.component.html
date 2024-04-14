@@ -1,0 +1,48 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<body>
+  <div class="wrapper">
+    <div class="container main">
+      <div class="row">
+        <div class="col-md-6 side-image">
+          <!-------------      image      ------------->
+        </div>
+        <div class="col-md-6 right">
+          <div class="input-box" >
+            <header>Se connecter</header>
+            <div class="input-field">
+              <input  [(ngModel)]="email" type="text" class="input" id="email" required="" />
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field" id="password1">
+              <input
+              [(ngModel)]="password"
+                type="password"
+                class="input"
+                id="pass"
+                required=""
+                name="password"
+              />
+              <label for="pass">Mot de passe</label>
+            </div>
+
+            <div *ngIf="errorCompte" class="alert alert-danger" role="alert">
+              Compte inrouvable !
+            </div> 
+
+            <div class="input-field">
+              <input (click)="signIn()" type="submit" class="submit" value=" Connecter" />
+            </div>
+            <br />
+
+            <div class="signin">
+              <span
+                >Vous n’avez pas de compte?
+                <a  routerLink="/sinscrire"  id="Inscrivez-vous">Inscrivez-vous</a></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
